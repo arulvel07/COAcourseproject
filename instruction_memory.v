@@ -10,11 +10,13 @@ module instruction_memory (
     // Test program
     // Format: [opcode(4) | rd(3) | rs(3) | imm(6)]
     initial begin
-        memory[0] = 16'b0110_001_000_000101; // LOADI R1, 5
-        memory[1] = 16'b0110_010_000_000011; // LOADI R2, 3
-        memory[2] = 16'b0001_001_010_000000; // ADD R1, R2  → R1 = 8
-        memory[3] = 16'b0000_000_000_000000; // NOP
-    end
+    memory[0] = 16'b0110_001_000_001010; // LOADI R1, 10  → a = 10
+    memory[1] = 16'b0110_010_000_000111; // LOADI R2, 7   → b = 7
+    memory[2] = 16'b0101_011_001_000000; // MOV R3, R1    → temp = a
+    memory[3] = 16'b0101_001_010_000000; // MOV R1, R2    → a = b
+    memory[4] = 16'b0101_010_011_000000; // MOV R2, R3    → b = temp
+    memory[5] = 16'b0000_000_000_000000; // NOP
+end
 
     assign instruction = memory[addr];
 

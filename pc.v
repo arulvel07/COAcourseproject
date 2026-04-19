@@ -11,7 +11,7 @@ module pc (
         if (reset)
             pc_out <= 0;
         else if (pc_inc)
-            pc_out <= pc_out + 1;
+            pc_out <= pc_out + 1; //pc advances once per 4 cycle instruction
     end
 
 endmodule

@@ -1,10 +1,10 @@
 // Control Unit - decodes opcode into control signals
 
 module control_unit (
-    input [3:0] opcode,
-    output reg [3:0] alu_op,
-    output reg reg_write,
-    output reg imm_sel
+    input [3:0] opcode, 
+    output reg [3:0] alu_op, //tells alu what to perform
+    output reg reg_write,   //should result return back to register
+    output reg imm_sel //should operant b come from immediate value(1) or register(0)
 );
 
     always @(*) begin

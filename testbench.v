@@ -29,13 +29,13 @@ module testbench;
         // Wait for program to finish
         #400;
 
-        // Print final results
-        $display("====== RESULTS ======");
-        $display("R1 = %0d", cpu.u_regfile.registers[1]);
-        $display("R2 = %0d", cpu.u_regfile.registers[2]);
-        $display("PC = %0d", pc_out);
-        $display("=====================");
-        // Expected: R1=8, R2=3
+        #500;
+
+        $display("====== SWAP RESULTS ======");
+        $display("R1 (a)    = %0d", cpu.u_regfile.registers[1]); // Expected: 7 initially(10)
+        $display("R2 (b)    = %0d", cpu.u_regfile.registers[2]); // Expected: 10 initally (7)
+        $display("R3 (temp) = %0d", cpu.u_regfile.registers[3]); // Expected: 10
+        $display("=========================="); 
 
         $finish;
     end

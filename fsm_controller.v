@@ -3,10 +3,10 @@
 module fsm_controller (
     input clk,
     input reset,
-    input ctrl_reg_write,
-    output reg pc_inc,
-    output reg reg_write_en,
-    output reg [1:0] state
+    input ctrl_reg_write,  //does this instruction need to write a result
+    output reg pc_inc, //should the program counter increment
+    output reg reg_write_en, //should the register file write
+    output reg [1:0] state //current state of the fsm
 );
 
     // State names
