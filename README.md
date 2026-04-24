@@ -79,6 +79,7 @@ Time=16  R1=5   R2=0   R3=0
 Time=32  R1=5   R2=3   R3=0
 Time=48  R1=8   R2=3   R3=0
 Simulation complete.
+```
 
 ---
 
