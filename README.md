@@ -72,13 +72,13 @@ gtkwave cpu_dump.vcd
 In GTKWave, add signals `clk`, `state`, `IR`, `PC`, `alu_result`, and `reg_write` to trace execution cycle by cycle.
 
 ---
-
 ## Expected Output
+
 ```bash
 Time=16  R1=5   R2=0   R3=0
 Time=32  R1=5   R2=3   R3=0
 Time=48  R1=8   R2=3   R3=0
-Simulation complete.```
+Simulation complete.
 
 ---
 
