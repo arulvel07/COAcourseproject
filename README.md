@@ -38,7 +38,7 @@ This project builds a simple CPU from scratch to demonstrate how instructions ex
 
 ## Requirements
 
-- [Icarus Verilog](http://iverilog.icarus.com/)
+- [Verilog](http://iverilog.icarus.com/)
 - [GTKWave](http://gtkwave.sourceforge.net/)
 
 ### Install (Ubuntu/Debian)
