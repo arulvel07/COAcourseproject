@@ -41,7 +41,7 @@ This project builds a simple CPU from scratch to demonstrate how instructions ex
 - [Verilog](http://iverilog.icarus.com/)
 - [GTKWave](http://gtkwave.sourceforge.net/)
 
-### Install (Ubuntu/Debian)
+### Install (Ubuntu)
 
 ```bash
 sudo apt-get install -y iverilog gtkwave
